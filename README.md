@@ -1,6 +1,6 @@
 # Laundry Management Website
 
-This is a website made to help laundry providers to keep track their users laundry also for users to get there laundary efficiently.
+This is a web application designed to help laundry service providers manage their users' laundry efficiently. It also allows users to track their laundry status conveniently.
 
 ## Getting Started
 

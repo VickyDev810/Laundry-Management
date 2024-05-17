@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gradient__bg{
+    background: var(--color-box);
+}
+
+.background__color{
+    background: var(--color-bg);
+}
