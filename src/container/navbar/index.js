@@ -1,10 +1,11 @@
 import { IoIosNotifications } from "react-icons/io";
 import { AiFillMessage } from "react-icons/ai";
-import { SearchMenu } from '../../components';
+import { SearchMenu,DarkMode } from '../../components';
 
 
 export {
     IoIosNotifications,
     AiFillMessage,
-    SearchMenu
+    SearchMenu,
+    DarkMode
 }

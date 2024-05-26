@@ -1,22 +1,22 @@
-import './App.css'
+import './App.css';
 
-import React from 'react'
-import {Header, Navbar, Sidebar, Status, Task} from './container';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HomePage, SearchPage, UserPage } from './pages/index';
 
 const App = () => {
+ 
   return (
-    <div className='flex flex-row background__color'>
-      <div className="flex-2">
-      <Sidebar />
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/user" element={<UserPage />} />
+        </Routes>
       </div>
-      <div className="flex-1 m-5">
-      <Navbar />
-      <Header />
-      <Task />
-      </div>
-    </div>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
