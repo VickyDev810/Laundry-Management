@@ -8,12 +8,10 @@
     
     --gradient-color: radial-gradient(circle at 0% 0%, rgba(126, 126, 122, 1) 0%, rgba(15, 15, 15, 1) 100%);
     --gradient-color-selected: radial-gradient(circle at 52% 53%, rgba(36, 36, 36, 1) 1%, rgba(0, 0, 0, 1) 100%);
-    ;
     --color-box: #F1F0F1;
     --color-bg: #FEFFFE;
     --color-darkbg: #222831;
     --color-darkbg2: #31363F;
     --text-dark: #76ABAE; 
-    --text-dark2: #EEEEEE; 
-    
+    --text-dark2: #EEEEEE;
   }
