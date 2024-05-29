@@ -6,3 +6,4 @@ export {default as BagQueue} from './bags/BagQueue';
 export {default as BagReady} from './bags/BagReady';
 export {default as ClothsForm} from './form/ClothsForm';
 export {default as DarkMode} from './darkmode/DarkMode';
+export {default as About} from './form/About';

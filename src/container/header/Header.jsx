@@ -4,7 +4,7 @@ import dark_laundry from '../../assets/dark_laundry.jpg'
 import { Status } from '../'
 
 
-const Header = () => {
+const Header = ({ darkMode }) => {
 
   return (
     <div>
@@ -16,7 +16,7 @@ const Header = () => {
           <Status  />
         </div>
       <div className='flex flex-row mt-3 w-full justify-center sm:flex-col items-center '>
-        <img src={ Laundry } alt="" className="max-h-[380px] rounded-lg shadow-lg sm:max-h-[250px] md:max-h-[300px] "/>
+        <img src={ darkMode ? dark_laundry : Laundry  } alt="" className="max-h-[380px] rounded-lg shadow-lg sm:max-h-[250px] md:max-h-[300px] "/>
       </div>
     </div>
     </div>

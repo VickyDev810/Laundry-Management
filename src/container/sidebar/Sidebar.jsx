@@ -3,7 +3,7 @@ import {ValueButton,DarkMode} from '../../components';
 import {RiMenuLine, FaHome, CiSearch, MdGroups, FaCalendarDay} from './'
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ darkMode, setDarkMode }) => {
   return (
     <div className="mr-20 sm:mr-14 md:mr-14 shadow-lg ">
     <div className='flex justify-start flex-col gradient__bg  fixed dark:bg-[--color-darkbg2]'>
@@ -14,7 +14,7 @@ const Sidebar = () => {
         <Link to={'/'}><FaHome className='dark:text-[--text-dark] size-6 '/></Link>
         <Link to={'/user'}><div><MdGroups type='button' className='cursor-pointer dark:text-[--text-dark] size-6 ' /></div></Link>
         <div><FaCalendarDay className='dark:text-[--text-dark] size-6 '/></div>
-        <DarkMode />
+        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
         
       </div>
       </div>

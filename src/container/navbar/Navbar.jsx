@@ -1,8 +1,7 @@
 import React  from 'react'
-import {IoIosNotifications, AiFillMessage, SearchMenu, DarkMode} from './index'
-import { RiArrowDropDownLine } from "react-icons/ri";
+import {IoIosNotifications, AiFillMessage, SearchMenu, DarkMode, RiArrowDropDownLine, Link} from './index'
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   
   
   return (
@@ -14,10 +13,10 @@ const Navbar = () => {
       <div className='flex flex-row mr-7 align-middle items-center'>
         <IoIosNotifications className=' text-gray-500 size-7 mr-2  dark:text-[--text-dark]' />
         <AiFillMessage className=' text-gray-500 size-7 mr-2  dark:text-[--text-dark]'/>
-        <div className='mr-2 dark:text-[--text-dark]'>Profile</div>
+        <Link to={'/'}><div className='mr-2 dark:text-[--text-dark]' >Profile</div></Link>
         <div className='mr-2 dark:text-[--text-dark]'>Bag No</div>
         <RiArrowDropDownLine className='size-7 dark:text-[--text-dark]'/>
-        <DarkMode />
+        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
     </div>    
   )

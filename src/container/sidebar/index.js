@@ -11,5 +11,5 @@ export {
     CiSearch,
     MdGroups,
     FaCalendarDay,
-    MdOutlineDarkMode
+    MdOutlineDarkMode,
 }

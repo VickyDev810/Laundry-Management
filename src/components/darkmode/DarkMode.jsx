@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { MdDarkMode } from 'react-icons/md';
 
-function DarkMode() {
-  const [darkMode, setDarkMode] = useState(false);
-
+function DarkMode({ darkMode, setDarkMode }) {
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -13,10 +11,8 @@ function DarkMode() {
   }, [darkMode]);
 
   return (
-    <button
-      onClick={() => setDarkMode(!darkMode)}
-          >
-        <div><MdDarkMode className='dark:text-[--text-dark2] size-6 '/></div>
+    <button onClick={() => setDarkMode(!darkMode)}>
+      <div><MdDarkMode className='dark:text-[--text-dark2] size-6' /></div>
     </button>
   );
 }
